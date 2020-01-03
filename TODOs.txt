@@ -1,0 +1,16 @@
+1. Meterla (cookie check) en todos los .py al principio
+3. Refactorizar con un diagrama de entendimiento, futuros pasos, etc.
+4. Ampliar las tablas para tener modificacion y tag de acceso directo y los LINKs del attachement
+5. Implementar el "lucky" (ir al mas aproximado: ultimo usado que cumpla LIKE) y editar (no pasar por resultados)
+6. Dockerizarlo y meterlo en kimsufi
+7. el UPLOAD es esencial e importante (ver lo que tengo de upload.py)
+8. El from que sea campo seleccion opciones multiples. Que se meta en la DB las plantillas. Que se vean como "campos"
+9. Mejorar los logs y los try except.
+10. el upload meter tambien una descripcion del fichero: pej: diagrama de red.
+11. la lista de links y decsripciones ponerlas en un dict y encapsularlo en python: import _pickle as pickle
+12. como {'filename':'description', 'etc....}
+13. codificar campos como campo1:: y enetonces hacerlo aparecer como html from
+14. meter snnipets que son codigo python en un registro. se ejecutarán para un indice X (una visualizacion)
+15. lo anterior que accede a la tabla pair con el select que me interese (buscar). puede complementar lo anterior
+16. se ejecuta en otro campo que se llama "execute" -- bueno: 14,15 y 16 son aun muy especulativos
+

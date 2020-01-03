@@ -1,0 +1,23 @@
+input[type=text] {
+width: 25%;
+padding: 5px 5px;
+margin: 1px 0;
+background: #ACC0C0;
+box-sizing: border-box;
+}
+textarea {
+width: 55%;
+padding: 5px 5px;
+margin: 1px 0;
+background: #ACC0C0;
+box-sizing: border-box;
+}
+input[type=submit] {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
