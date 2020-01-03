@@ -1,3 +1,4 @@
+lo metí
 como root en /var/www/html
 ojo los fichero se ceran con touch (no va directo con vscode)
 ojo si hay mas ficheros: git add .
