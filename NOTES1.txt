@@ -1,8 +1,11 @@
-kaka de la vaca
 como root en /var/www/html
 ojo los fichero se ceran con touch (no va directo con vscode)
 ojo si hay mas ficheros: git add .
 git commit -a
+git push
+
+git add -A
+git commit -m "kaka3"
 git push
 --
 en el lado del servidor
