@@ -1,3 +1,21 @@
 kaka de la vaca
+como root en /var/www/html
+ojo los fichero se ceran con touch (no va directo con vscode)
+ojo si hay mas ficheros: git add .
 git commit -a
 git push
+--
+en el lado del servidor
+
+-
+para que no pida pass
+en $HOME/.netrc
+ machine github.com
+    user isaacpe@gmail.com                                                                                                                                                        2        login isaacpe@gmail.com
+    password laquetuyasabes con coma
+--
+esto podría ir en el docker para periodicamente tener la version
+*/1 * * * * cd /my/sites/staging && git pull -q origin master
+crontab del root
+--
+para ver el commint -m "kaka"
