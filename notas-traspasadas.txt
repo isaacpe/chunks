@@ -1,0 +1,82 @@
+KUBECONFIG=/opt/openshift/deploymay/auth/kubeconfig
+ojo hay que hacer ssh en uno de los nodos master
+ssh core@
+lo que diga el oc get nodes
+y a partir de ahi, usar oc..
+
+para crearlo
+
+htpasswd -c /etc/origin/master/htpasswd admin
+
+para añadirlo
+
+htpasswd  /etc/origin/master/htpasswd admin
+
+cat y ls
+
+vi /etc/origin/master/master-config.yaml
+
+y ahi debed de tener
+
+seccion identity provider
+
+Kind y file
+
+HTPasswdIdenityProvider
+
+y el fichero de antes
+
+systemctl restart origin-master-controllers.service
+
+systemctl restart origin-master-api.service
+
+para darle admin al usuario
+
+oc admin add-cluster-role-to-user cluster-admin admin
+
+admin)) es el nombre del user 
+
+export KUBECONFIG=srvcceasobz01.usof.mdef.es
+
+1.- Producción: Está en uso oficial, está en una red aislada y se necesita un perfil de citrix para acceder desde: https://acceso-gestion.mdef.es/
+                Máquina de salto: srvcceasobz01.usof.mdef.es
+                Nodos: srvcceasomz01/02/03 srvcceasonz01/02/03 .usof.mdef.es
+                Kubeconfig: srvcceasobz01.usof.mdef.es:#/software/install03/auth/kubeconfig
+2.- Preproducción: Aún no está desplegado, 
+Máquina de salto: srvcceascoz01.mdef.es
+                Nodos: srvcceasomz01p/02p/03p y srvcceasonz01p/02p.mdef.es
+                Kubeconfig: Aún no instalado.
+3.- Desarrollo: Instalado, con el error que te muestro en el mail anterior (lo que apunta Luis del spectrum scale), 
+Máquina de salto: srvcceascoz01.mdef.es
+Nodos: srvcceasomz01d/02d/03d y srvcceasonz01d/02d
+Kubeconfig: /opt/openshift/CESTICT1/des02/auth/kubeconfig
+4.- Piloto: Este morirá al final, pero para nuestras pruebas y demás nos sirve aunque ahora no funciona (operadores en fallo, dns, apiserver, etc…):
+Máquina de salto srvcceascoz01.mdef.es
+Nodos: srvcceasomz00,01/02 y srvcceasonz00/01
+Kubeconfig: /opt/openshift/deploymay/auth/kubeconfig
+
+
+console-openshift-console.apps.clucceasosz01d.mdef.es
+oc get events --sort-by='.lastTimestamp'
+
+/etc/ssh/ssh_host_rsa_key
+
+ssh -i  /opt/openshift/CESTICT1/install/openssh_des core@srvcceasomz01d.mdef.es
+
+
+  nfs:
+      path: /clucceasosz01d/registry
+      server: clucceasssz01d-nfs.mdef.es
+
+
+export KUBECONFIG=/opt/openshift/CESTICT1/des02/auth/kubeconfig
+mmnfs export list
+
+
+172.30.86.16:5000
+docker tag docker.io/busybox 172.30.86.16:5000/openshift/busybox
+
+
+internet-ccea
+ese es el bsid
+mV0^rf9F%E-*Rg3
